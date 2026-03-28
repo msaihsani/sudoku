@@ -1,0 +1,13 @@
+{
+  "appId": "com.game.sudoku",
+  "appName": "Sudoku",
+  "webDir": ".",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "file"
+  },
+  "android": {
+    "allowMixedContent": false,
+    "backgroundColor": "#ffffff"
+  }
+}
