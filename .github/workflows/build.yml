@@ -24,6 +24,11 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Prepare www folder
+        run: |
+          mkdir -p www
+          cp index.html www/index.html
+
       - name: Create package.json
         run: |
           echo '{
@@ -39,7 +44,7 @@ jobs:
 
       - name: Init Capacitor
         run: |
-          npx cap init "Sudoku" "com.game.sudoku" --web-dir "."
+          npx cap init "Sudoku" "com.game.sudoku" --web-dir "www"
 
       - name: Add Android platform
         run: |
